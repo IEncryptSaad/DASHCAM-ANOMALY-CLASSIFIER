@@ -1,0 +1,29 @@
+
+📊 MODEL EVALUATION SUMMARY
+
+✅ Overall Accuracy: 78%
+- This means the model correctly classifies 78 out of every 100 frames.
+
+📍 Class-wise Metrics:
+- 'Accident':
+  - Precision: 0.78 (correctly labeled accidents among all predicted accidents)
+  - Recall: 0.20 (missed many true accident cases)
+  - F1-score: 0.32
+
+- 'Non-Accident':
+  - Precision: 0.78
+  - Recall: 0.98 (almost all non-accidents correctly identified)
+  - F1-score: 0.87
+
+🧠 Confusion Matrix Insights:
+- False Negatives (missed accidents) are high — 2292 out of 2883
+- True Negatives (non-accidents correctly identified): 8205
+
+📈 Learning Curves:
+- Training accuracy improved steadily.
+- Validation accuracy plateaued and dipped slightly — suggests overfitting.
+
+📦 Saved Files:
+- Best model: best_model.h5
+- Confusion matrix plot: confusion_matrix.png
+- Classification report: evaluation_metrics.txt
